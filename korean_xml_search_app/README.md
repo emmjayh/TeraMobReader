@@ -49,7 +49,7 @@ korean_xml_search_app/
     ```
 4.  **Install Dependencies:**
     The application requires the following Python libraries:
-    *   `googletrans-py==4.0.0rc1` (for translation)
+    *   `deep-translator` (for translation)
     *   `langdetect` (for language detection)
     *   `Tkinter` (usually included with Python, but may need separate installation on some Linux systems: `sudo apt-get install python3-tk`)
 
@@ -69,6 +69,16 @@ korean_xml_search_app/
     *   **`TEST_MODE = True` (Default for Development/Testing):** Uses placeholder translations (e.g., "en_TEXT") without making live network calls. This is useful for offline development or avoiding API rate limits.
     *   **`TEST_MODE = False` (For Live Translation):** Attempts to use the `googletrans` library to perform actual Korean/English translations via Google Translate. This requires an active internet connection.
     *   **Important:** For initial use, you might want to test with `TEST_MODE = True`. Change it to `False` in `src/translator.py` when you want live translations. Be mindful of potential API usage limits of the underlying Google Translate service if making many requests.
+
+    ### Translation Caching
+
+    When `TEST_MODE = False` in `src/translator.py`, the application uses a translation cache to improve performance and reduce API calls on subsequent runs.
+
+    *   A cache file named `translation_cache.json` will be created (or updated) in the `src` directory.
+    *   **First Run (`TEST_MODE = False`):** When the application encounters new text requiring translation, it will perform a live API call via `deep-translator` and store the result in this cache. This means the *very first time* you run with new data and `TEST_MODE = False`, operations involving translation might be slower as the cache is populated.
+    *   **Subsequent Runs:** Once a translation is cached, it will be retrieved locally, making operations much faster for previously translated text.
+    *   **Clearing Cache:** To force re-translation of all terms, you can delete the `src/translation_cache.json` file.
+    *   `TEST_MODE = True` bypasses both live translation and the caching mechanism, using only placeholder translations.
 
 3.  **Run the GUI:**
     Navigate to the `src` directory and run `gui.py`:
