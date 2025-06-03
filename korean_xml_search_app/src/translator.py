@@ -1,5 +1,5 @@
 import langdetect
-from googletrans import Translator
+from deep_translator import GoogleTranslator # Updated import
 
 # Suppress langdetect warnings for short texts
 import warnings
@@ -56,13 +56,17 @@ def translate_to_english(text: str) -> str:
             return f"en_{text}" # Simulate English translation
         return text # Assume already English or non-translatable
 
+    # Live translation logic using deep-translator
     try:
-        translator = Translator()
-        translation = translator.translate(text, src='ko', dest='en')
-        return translation.text
+        # Ensure text is not empty after stripping, to prevent errors with the library
+        stripped_text = text.strip()
+        if not stripped_text:
+            return text
+        translated = GoogleTranslator(source='ko', target='en').translate(stripped_text)
+        return translated if translated else text # Ensure not None or empty
     except Exception as e:
-        # print(f"Error translating '{text}' to English: {e}")
-        return text # Return original text if translation fails
+        print(f"Error translating '{text}' to English using deep-translator: {e}")
+        return text # Return original text on error
 
 def translate_to_korean(text: str) -> str:
     """
@@ -84,13 +88,17 @@ def translate_to_korean(text: str) -> str:
             return f"ko_{text}" # Simulate Korean translation
         return text # Assume already Korean or non-translatable
 
+    # Live translation logic using deep-translator
     try:
-        translator = Translator()
-        translation = translator.translate(text, src='en', dest='ko')
-        return translation.text
+        # Ensure text is not empty after stripping, to prevent errors with the library
+        stripped_text = text.strip()
+        if not stripped_text:
+            return text
+        translated = GoogleTranslator(source='en', target='ko').translate(stripped_text)
+        return translated if translated else text # Ensure not None or empty
     except Exception as e:
-        # print(f"Error translating '{text}' to Korean: {e}")
-        return text # Return original text if translation fails
+        print(f"Error translating '{text}' to Korean using deep-translator: {e}")
+        return text # Return original text on error
 
 if __name__ == "__main__":
     sample_korean = "안녕하세요"

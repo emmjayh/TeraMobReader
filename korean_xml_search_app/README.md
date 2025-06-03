@@ -55,8 +55,9 @@ korean_xml_search_app/
 
     Install them using pip:
     ```bash
-    pip install googletrans==4.0.0rc1 langdetect
+    pip install deep-translator langdetect
     ```
+    *(Note: Live translations require an internet connection. `TEST_MODE` in `src/translator.py` can be used for offline development.)*
 
 ## Running the Application
 
