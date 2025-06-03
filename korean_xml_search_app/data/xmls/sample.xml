@@ -1,0 +1,2700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CCompensationData huntingZoneId="2">
+  <Compensation npcTemplateId="1" npcName="Redcap">
+    <ItemBag probability="0.002">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0015">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="Vitality Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0012">
+      <Item templateId="6066" name="Potion of Magic II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="Potion of Magic III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0055">
+      <Item templateId="7101" name="Mysterious Charm II_Level_12" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="Mystic Charm II_Level_12" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="Strange Charm II_Level_12" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="Enhanced Crystal - Slayer's Wrath II_Normal_Grass_Cutting" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="Enhanced Crystal - Slayer's Majesty II_Normal_Grass_Cutting" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="Enhanced Crystal - Slayer's Will II_Normal_Grass_Cutting" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="Enhanced Crystal - Executioner's Wrath II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="Enhanced Crystal - Executioner's Majesty II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="Enhanced Crystal - Executioner's Will II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="Enhanced Crystal - Executioner's Hope II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="Enhanced Crystal - Challenger's Majesty II_Normal_Grass_Cutting" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="Enhanced Crystal - Challenger's Wrath II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="Enhanced Crystal - Challenger's Will II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="Enhanced Crystal - Challenger's Potential II_Normal_Grass_Cutting" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0069">
+      <Item templateId="7202" name="Bomb III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="Healing Orb_Solo" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="Powerful Healing Orb_Solo" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0267">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="2" npcName="Lost Pixie">
+    <ItemBag probability="0.001">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0006">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0028">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0035">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0136">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="3" npcName="Centaurus">
+    <ItemBag probability="0.006">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.004">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0045">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.004">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0036">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0164">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0206">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.08">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="4" npcName="Wandering Sabertooth">
+    <ItemBag probability="0.0103">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.007">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0077">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.007">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0062">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0282">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0354">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="5" npcName="Large Sabertooth">
+    <ItemBag probability="0.0105">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0078">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0062">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0285">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0359">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1395">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="6" npcName="Corrupted Unicorn">
+    <ItemBag probability="0.0061">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0046">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0037">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0167">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.021">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="7" npcName="Tusked Boar">
+    <ItemBag probability="0.0138">
+      <Item templateId="98" name="Campfire_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="160" name="Town Return Scroll_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="8007" name="Swift Holy Water_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="7214" name="Resurrection Scroll_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="Vitality Holy Water_Level_1" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0088">
+      <Item templateId="6064" name="Potion of Magic I" min="1" max="1" probability="0.7" />
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0342">
+      <Item templateId="7100" name="Mysterious Charm I_Level_1" min="1" max="1" probability="0.34" />
+      <Item templateId="7104" name="Mystic Charm I_Level_1" min="1" max="1" probability="0.33" />
+      <Item templateId="7108" name="Strange Charm I_Level_1" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8308" name="Enhanced Crystal - Executioner's Wrath I_Normal_Grass_Cutting" min="1" max="1" probability="0.05" />
+      <Item templateId="8326" name="Enhanced Crystal - Executioner's Majesty I_Normal_Grass_Cutting" min="1" max="1" probability="0.05" />
+      <Item templateId="8482" name="Enhanced Crystal - Executioner's Will I_Normal_Grass_Cutting" min="1" max="1" probability="0.05" />
+      <Item templateId="8488" name="Enhanced Crystal - Executioner's Hope I_Normal_Grass_Cutting" min="1" max="1" probability="0.05" />
+      <Item templateId="8236" name="Enhanced Crystal - Challenger's Majesty I_Normal_Grass_Cutting" min="1" max="1" probability="0.11" />
+      <Item templateId="8302" name="Enhanced Crystal - Challenger's Wrath I_Normal_Grass_Cutting" min="1" max="1" probability="0.11" />
+      <Item templateId="8422" name="Enhanced Crystal - Challenger's Will I_Normal_Grass_Cutting" min="1" max="1" probability="0.11" />
+      <Item templateId="8428" name="Enhanced Crystal - Challenger's Potential I_Normal_Grass_Cutting" min="1" max="1" probability="0.11" />
+      <Item templateId="8224" name="Enhanced Crystal - Slayer's Wrath I_Normal_Grass_Cutting" min="1" max="1" probability="0.12" />
+      <Item templateId="8230" name="Enhanced Crystal - Slayer's Majesty I_Normal_Grass_Cutting" min="1" max="1" probability="0.12" />
+      <Item templateId="8416" name="Enhanced Crystal - Slayer's Will I_Normal_Grass_Cutting" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0332">
+      <Item templateId="7201" name="Bomb II" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="8" npcName="Pigling">
+    <ItemBag probability="0.001">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0006">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0027">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0034">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="10" npcName="어둠의 요정 귀족">
+    <ItemBag probability="0.0061">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0046">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0037">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0167">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.021">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="13" npcName="CentaurusY">
+    <ItemBag probability="0.0103">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.007">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0077">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.007">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0062">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0282">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0354">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1378">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="21" npcName="Decaying Gillidoo">
+    <ItemBag probability="0.0106">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0079">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0063">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0289">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0363">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="22" npcName="Corrupted Earth Spirit">
+    <ItemBag probability="0.0106">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0079">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0063">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0289">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0363">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="23" npcName="Nature Spirit">
+    <ItemBag probability="0.0012">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0009">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0033">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0042">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="32" npcName="Corrupted Earth Spirit (Full Target)">
+    <ItemBag probability="0.0061">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0046">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0037">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0167">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.021">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0818">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="33" npcName="Fallen Nature Spirit">
+    <ItemBag probability="0.0012">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0009">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0033">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0042">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0164">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="34" npcName="Wandering SabertoothQ">
+    <ItemBag probability="0.0138">
+      <Item templateId="98" name="모닥불_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="소형 판도라 상자_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="160" name="마을 귀환 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="8007" name="신속의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="7214" name="부활 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0088">
+      <Item templateId="6064" name="마력의 물약 I" min="1" max="1" probability="0.7" />
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0342">
+      <Item templateId="7100" name="의문의 부적 I_1레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7104" name="신비한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7108" name="이상한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8308" name="강화 크리스탈 - 집행자의 분노 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8326" name="강화 크리스탈 - 집행자의 위용 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8482" name="강화 크리스탈 - 집행자의 의지 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8488" name="강화 크리스탈 - 집행자의 희망 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8236" name="강화 크리스탈 - 도전자의 위용 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8302" name="강화 크리스탈 - 도전자의 분노 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8422" name="강화 크리스탈 - 도전자의 의지 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8428" name="강화 크리스탈 - 도전자의 저력 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8224" name="강화 크리스탈 - 학살자의 분노 I_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8230" name="강화 크리스탈 - 학살자의 위용 I_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8416" name="강화 크리스탈 - 학살자의 의지 I_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0332">
+      <Item templateId="7201" name="폭탄 II" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="52" npcName="Violent PixieD">
+    <ItemBag probability="0.0005">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0016">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="56" npcName="Corrupted UnicornR">
+    <ItemBag probability="0.0106">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0079">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0071">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0063">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0289">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0363">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1413">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="57" npcName="Tusked Boar (i)">
+    <ItemBag probability="0.0138">
+      <Item templateId="98" name="모닥불_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="소형 판도라 상자_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="160" name="마을 귀환 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="8007" name="신속의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0104">
+      <Item templateId="7214" name="부활 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0088">
+      <Item templateId="6064" name="마력의 물약 I" min="1" max="1" probability="0.7" />
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0342">
+      <Item templateId="7100" name="의문의 부적 I_1레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7104" name="신비한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7108" name="이상한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8308" name="강화 크리스탈 - 집행자의 분노 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8326" name="강화 크리스탈 - 집행자의 위용 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8482" name="강화 크리스탈 - 집행자의 의지 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8488" name="강화 크리스탈 - 집행자의 희망 I_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8236" name="강화 크리스탈 - 도전자의 위용 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8302" name="강화 크리스탈 - 도전자의 분노 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8422" name="강화 크리스탈 - 도전자의 의지 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8428" name="강화 크리스탈 - 도전자의 저력 I_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8224" name="강화 크리스탈 - 학살자의 분노 I_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8230" name="강화 크리스탈 - 학살자의 위용 I_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8416" name="강화 크리스탈 - 학살자의 의지 I_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0332">
+      <Item templateId="7201" name="폭탄 II" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1292">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="58" npcName="Agile Pigling">
+    <ItemBag probability="0.001">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0008">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0007">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0006">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0027">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0034">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0133">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="62" npcName="Corrupted PixieE">
+    <ItemBag probability="0.0006">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0005">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0017">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0021">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0082">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="102" npcName="Corrupted PixieO">
+    <ItemBag probability="0.0004">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0002">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0011">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0014">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0055">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="152" npcName="Corrupted PixieX">
+    <ItemBag probability="0.0005">
+      <Item templateId="98" name="모닥불_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="소형 판도라 상자_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="160" name="마을 귀환 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="8007" name="신속의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0004">
+      <Item templateId="7214" name="부활 주문서_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_1레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="6064" name="마력의 물약 I" min="1" max="1" probability="0.7" />
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="7100" name="의문의 부적 I_1레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7104" name="신비한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7108" name="이상한 부적 I_1레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8224" name="강화 크리스탈 - 학살자의 분노 I_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8230" name="강화 크리스탈 - 학살자의 위용 I_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8416" name="강화 크리스탈 - 학살자의 의지 I_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8308" name="강화 크리스탈 - 집행자의 분노 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8326" name="강화 크리스탈 - 집행자의 위용 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8482" name="강화 크리스탈 - 집행자의 의지 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8488" name="강화 크리스탈 - 집행자의 희망 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8236" name="강화 크리스탈 - 도전자의 위용 I_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8302" name="강화 크리스탈 - 도전자의 분노 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8422" name="강화 크리스탈 - 도전자의 의지 I_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8428" name="강화 크리스탈 - 도전자의 저력 I_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="7200" name="Bomb I" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.005">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="202" npcName="Angry Pixie named">
+    <ItemBag probability="0.0005">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0003">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0013">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.07" />
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.09" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.1" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.1" />
+    </ItemBag>
+    <ItemBag probability="0.0016">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0062">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="203" npcName="Centaurus Likan named">
+    <ItemBag probability="0.0061">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0045">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0041">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0036">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0165">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0208">
+      <Item templateId="7202" name="폭탄 III" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0809">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="206" npcName="Unicorn Seravi named">
+    <ItemBag probability="0.0107">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0072">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.008">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0072">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0064">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0293">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0368">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="209" npcName="Evil Sorcerer">
+    <ItemBag probability="0.0034">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0023">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0026">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0023">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0021">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0094">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0118">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="210" npcName="Evil Sorcerer2">
+    <ItemBag probability="0.0034">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0023">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0026">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0023">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0021">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0094">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0118">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0459">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="256" npcName="Unicorn Seravi Transformed">
+    <ItemBag probability="0.0107">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0072">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.008">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0072">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0064">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0293">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0368">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1431">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="259" npcName="Evil Sorcerer named">
+    <ItemBag probability="0.0035">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0024">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0026">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0024">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0021">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0096">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0121">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="260" npcName="Evil Sorcerer2 named">
+    <ItemBag probability="0.0035">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0024">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0026">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0024">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0021">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0096">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.0121">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.0471">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="507" npcName="Tusked Boar (Free Hunt)">
+    <ItemBag probability="0.0134">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.009">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0101">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.009">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.008">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0366">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.046">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="510" npcName="Dark Fairy Noble (Free Hunt)">
+    <ItemBag probability="0.0134">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.009">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.0101">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.009">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0.008">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+    <ItemBag probability="0.0366">
+      <Item templateId="7101" name="의문의 부적 II_12레벨" min="1" max="1" probability="0.34" />
+      <Item templateId="7105" name="신비한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+      <Item templateId="7109" name="이상한 부적 II_12레벨" min="1" max="1" probability="0.33" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8309" name="강화 크리스탈 - 집행자의 분노 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8327" name="강화 크리스탈 - 집행자의 위용 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8483" name="강화 크리스탈 - 집행자의 의지 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8489" name="강화 크리스탈 - 집행자의 희망 II_일반_풀베기" min="1" max="1" probability="0.05" />
+      <Item templateId="8237" name="강화 크리스탈 - 도전자의 위용 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8303" name="강화 크리스탈 - 도전자의 분노 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8423" name="강화 크리스탈 - 도전자의 의지 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8429" name="강화 크리스탈 - 도전자의 저력 II_일반_풀베기" min="1" max="1" probability="0.11" />
+      <Item templateId="8225" name="강화 크리스탈 - 학살자의 분노 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8231" name="강화 크리스탈 - 학살자의 위용 II_일반_풀베기" min="1" max="1" probability="0.12" />
+      <Item templateId="8417" name="강화 크리스탈 - 학살자의 의지 II_일반_풀베기" min="1" max="1" probability="0.12" />
+    </ItemBag>
+    <ItemBag probability="0.046">
+      <Item templateId="7203" name="폭탄 IV" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ClassItemBag class="Warrior">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Lancer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Slayer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Berserker">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Sorcerer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+    <ClassItemBag class="Archer">
+      <ItemBag probability="0.1788">
+        <Item templateId="8000" name="회복 구슬_솔로" min="1" max="1" probability="0.5" />
+        <Item templateId="8005" name="강력 회복 구슬_솔로" min="1" max="1" probability="0.5" />
+      </ItemBag>
+    </ClassItemBag>
+  </Compensation>
+  <Compensation npcTemplateId="600" npcName="Giant Bee">
+    <ItemBag probability="0">
+      <Item templateId="98" name="Campfire_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="100" name="Small Pandora Box_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="160" name="Town Return Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="8007" name="Swift Holy Water_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="7214" name="Resurrection Scroll_Level_12" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="90012" name="활력의 성수_12레벨" min="1" max="1" probability="1" />
+    </ItemBag>
+    <ItemBag probability="0">
+      <Item templateId="6066" name="마력의 물약 II" min="1" max="1" probability="0.7" />
+      <Item templateId="6068" name="마력의 물약 III" min="1" max="1" probability="0.3" />
+    </ItemBag>
+  </Compensation>
+</CCompensationData>
