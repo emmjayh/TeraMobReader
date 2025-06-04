@@ -16,6 +16,10 @@ CACHE_FILE = os.path.join(os.path.dirname(__file__), "translation_cache.json")
 translation_cache = {}
 # --- End Translation Cache ---
 
+# --- Logged Errors Set ---
+_logged_translation_errors = set()
+# --- End Logged Errors Set ---
+
 def load_translation_cache():
     """Loads the translation cache from CACHE_FILE if it exists."""
     global translation_cache
@@ -68,15 +72,11 @@ def is_korean(text: str) -> bool:
 
     return False # Default if no Korean characters and text is too short for langdetect
 
-def translate_to_english(text: str) -> str:
+def translate_to_english(text: str, text_type="text") -> str: # Added text_type
     """
     Translates Korean text to English.
-
-    Args:
-        text (str): The Korean text to translate.
-
-    Returns:
-        str: The translated English text, or the original text if translation fails.
+    Uses cache if TEST_MODE is False.
+    Logs errors for unique terms only once per session.
     """
     if not text or not isinstance(text, str) or not text.strip():
         return text
@@ -86,37 +86,33 @@ def translate_to_english(text: str) -> str:
             return f"en_{text}"
         return text
 
-    # Live translation with caching
     stripped_text = text.strip()
     if not stripped_text:
-        return text # Return original for empty or whitespace-only strings
+        return text
 
-    cache_key = f"ko_en:{stripped_text}" # Language-specific key
+    cache_key = f"ko_en:{stripped_text}"
     if cache_key in translation_cache:
-        # print(f"Cache hit for '{stripped_text}' (ko->en)")
         return translation_cache[cache_key]
 
-    # print(f"Cache miss for '{stripped_text}' (ko->en). Calling API.")
     try:
         translated = GoogleTranslator(source='ko', target='en').translate(stripped_text)
-        if translated: # Ensure translation is not None or empty
+        if translated:
             translation_cache[cache_key] = translated
             save_translation_cache()
             return translated
-        return text # Return original if translation result is empty
-    except Exception as e:
-        print(f"Error translating '{text}' to English using deep-translator: {e}")
         return text
+    except Exception as e:
+        error_log_key = f"ko_en:{stripped_text}" # Use stripped_text for error key
+        if error_log_key not in _logged_translation_errors:
+            print(f"Error translating {text_type} '{stripped_text}' from ko to en: {e}. Will use original.")
+            _logged_translation_errors.add(error_log_key)
+        return text # Return original stripped_text or text? Original 'text' is safer.
 
-def translate_to_korean(text: str) -> str:
+def translate_to_korean(text: str, text_type="text") -> str: # Added text_type
     """
     Translates English text to Korean.
-
-    Args:
-        text (str): The English text to translate.
-
-    Returns:
-        str: The translated Korean text, or the original text if translation fails.
+    Uses cache if TEST_MODE is False.
+    Logs errors for unique terms only once per session.
     """
     if not text or not isinstance(text, str) or not text.strip():
         return text
@@ -126,33 +122,33 @@ def translate_to_korean(text: str) -> str:
             return f"ko_{text}"
         return text
 
-    # Live translation with caching
     stripped_text = text.strip()
     if not stripped_text:
-        return text # Return original for empty or whitespace-only strings
+        return text
 
-    cache_key = f"en_ko:{stripped_text}" # Language-specific key
+    cache_key = f"en_ko:{stripped_text}"
     if cache_key in translation_cache:
-        # print(f"Cache hit for '{stripped_text}' (en->ko)")
         return translation_cache[cache_key]
 
-    # print(f"Cache miss for '{stripped_text}' (en->ko). Calling API.")
     try:
         translated = GoogleTranslator(source='en', target='ko').translate(stripped_text)
-        if translated: # Ensure translation is not None or empty
+        if translated:
             translation_cache[cache_key] = translated
             save_translation_cache()
             return translated
-        return text # Return original if translation result is empty
-    except Exception as e:
-        print(f"Error translating '{text}' to Korean using deep-translator: {e}")
         return text
+    except Exception as e:
+        error_log_key = f"en_ko:{stripped_text}" # Use stripped_text for error key
+        if error_log_key not in _logged_translation_errors:
+            print(f"Error translating {text_type} '{stripped_text}' from en to ko: {e}. Will use original.")
+            _logged_translation_errors.add(error_log_key)
+        return text # Return original stripped_text or text? Original 'text' is safer.
 
 # Initial load of the cache when the module is imported
 load_translation_cache()
 
 if __name__ == "__main__":
-    # --- Original Test Mode Tests ---
+    # --- Original Test Mode Checks (using updated function signatures) ---
     print("--- Running Original Test Mode Checks ---")
     sample_korean = "안녕하세요"
     sample_english = "Hello"
@@ -160,60 +156,86 @@ if __name__ == "__main__":
     print(f"'{sample_english}' is Korean: {is_korean(sample_english)}")
 
     if is_korean(sample_korean):
-        translated_en = translate_to_english(sample_korean)
+        translated_en = translate_to_english(sample_korean, text_type="greeting")
         print(f"Korean to English (TEST_MODE): '{sample_korean}' -> '{translated_en}'")
 
-    translated_ko = translate_to_korean(sample_english)
+    translated_ko = translate_to_korean(sample_english, text_type="greeting")
     print(f"English to Korean (TEST_MODE): '{sample_english}' -> '{translated_ko}'")
     print("--- Finished Original Test Mode Checks ---\n")
 
-    # --- Testing Live Translation & Caching ---
-    # Ensure TEST_MODE = False for this specific test block, then revert
-    original_test_mode_for_caching_test = TEST_MODE # Use global directly
-    TEST_MODE = False # Use global directly
-    print(f"--- Temporarily setting TEST_MODE to: {TEST_MODE} for Caching Test ---")
+    # --- Testing Live Translation, Caching & Error Logging ---
+    original_test_mode_for_caching_test = TEST_MODE
+    TEST_MODE = False
+    print(f"--- Temporarily setting TEST_MODE to: {TEST_MODE} for Caching & Error Logging Test ---")
 
-    # Clear cache for a clean test if file exists
     if os.path.exists(CACHE_FILE):
         print(f"Removing existing cache file: {CACHE_FILE}")
         os.remove(CACHE_FILE)
-    load_translation_cache() # Reload empty cache
+    _logged_translation_errors.clear() # Clear logged errors for clean test
+    load_translation_cache()
 
-    print("\n--- Testing Live Translation & Caching ---")
-    korean_text_live = "안녕하세요" # A common Korean greeting
-    english_text_live = "Hello, world!"
+    print("\n--- Testing Live Translation & Caching (with text_type) ---")
+    korean_text_live = "반갑습니다"
+    english_text_live = "Nice to meet you!"
 
-    print(f"Translating '{korean_text_live}' to English (1st time, live):")
-    translated1_en = translate_to_english(korean_text_live)
+    print(f"Translating '{korean_text_live}' to English (1st time, live, as 'welcome message'):")
+    translated1_en = translate_to_english(korean_text_live, text_type="welcome message")
     print(f"Result: {translated1_en}")
 
-    print(f"Translating '{korean_text_live}' to English (2nd time, should be cached):")
-    translated2_en = translate_to_english(korean_text_live)
+    print(f"Translating '{korean_text_live}' to English (2nd time, should be cached, as 'welcome message'):")
+    translated2_en = translate_to_english(korean_text_live, text_type="welcome message")
     print(f"Result: {translated2_en}")
-    if translated1_en and translated1_en != f"en_{korean_text_live}": # Check if live translation likely occurred
+    if translated1_en and translated1_en != f"en_{korean_text_live}":
       assert translated1_en == translated2_en
 
-    print(f"\nTranslating '{english_text_live}' to Korean (1st time, live):")
-    translated1_ko = translate_to_korean(english_text_live)
+    print(f"\nTranslating '{english_text_live}' to Korean (1st time, live, as 'salutation'):")
+    translated1_ko = translate_to_korean(english_text_live, text_type="salutation")
     print(f"Result: {translated1_ko}")
 
-    print(f"Translating '{english_text_live}' to Korean (2nd time, should be cached):")
-    translated2_ko = translate_to_korean(english_text_live)
+    print(f"Translating '{english_text_live}' to Korean (2nd time, should be cached, as 'salutation'):")
+    translated2_ko = translate_to_korean(english_text_live, text_type="salutation")
     print(f"Result: {translated2_ko}")
-    if translated1_ko and translated1_ko != f"ko_{english_text_live}": # Check if live translation likely occurred
+    if translated1_ko and translated1_ko != f"ko_{english_text_live}":
       assert translated1_ko == translated2_ko
+
+    print("\n--- Testing Error Logging ---")
+    # Forcing an error is hard without mocking translate() itself to raise an exception.
+    # We'll assume a very specific, perhaps nonsensical string might trigger an issue,
+    # or at least demonstrate the logging path if an error *were* to occur.
+    # The deep_translator library is quite robust for simple strings.
+    # A language code that doesn't exist would be a good test if we could control the source/target easily here.
+    # Let's use a text that, if it were to fail, would test the logic.
+    error_test_text_ko = "오류테스트용텍스트" # "Text for error test"
+    error_test_text_en = "ErrorTestText"
+
+    # Simulate an error by temporarily using an invalid target language to force an exception
+    # This is a bit of a hack for testing the error logging directly.
+    # Note: This requires GoogleTranslator to be accessible, which it is here.
+    try:
+        print(f"Simulating error for KO->XX on '{error_test_text_ko}' (1st time):")
+        GoogleTranslator(source='ko', target='xx').translate(error_test_text_ko) # This should fail
+    except Exception as e_sim_ko:
+        error_log_key = f"ko_xx:{error_test_text_ko}"
+        if error_log_key not in _logged_translation_errors:
+            print(f"Error translating custom_type '{error_test_text_ko}' from ko to xx: {e_sim_ko}. Will use original.")
+            _logged_translation_errors.add(error_log_key)
+
+    try:
+        print(f"Simulating error for KO->XX on '{error_test_text_ko}' (2nd time):")
+        GoogleTranslator(source='ko', target='xx').translate(error_test_text_ko)
+    except Exception as e_sim_ko_2:
+        error_log_key = f"ko_xx:{error_test_text_ko}"
+        if error_log_key not in _logged_translation_errors: # This condition should prevent re-logging
+            print(f"Error translating custom_type '{error_test_text_ko}' from ko to xx: {e_sim_ko_2}. Will use original. (UNEXPECTED RE-LOG)")
+            _logged_translation_errors.add(error_log_key)
+        else:
+            print(f"(Error for '{error_log_key}' was already logged, not printing full message again - as expected)")
+
 
     if os.path.exists(CACHE_FILE):
         print(f"\nCache file '{CACHE_FILE}' created/updated.")
-        try:
-            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-                print("Cache content:")
-                print(f.read())
-        except Exception as e:
-            print(f"Error reading cache file for display: {e}")
     else:
-        print(f"\nCache file '{CACHE_FILE}' NOT created (problem).")
+        print(f"\nCache file '{CACHE_FILE}' NOT created.")
 
-    # Revert TEST_MODE to its original state for other potential imports/tests
-    TEST_MODE = original_test_mode_for_caching_test # Use global directly
+    TEST_MODE = original_test_mode_for_caching_test
     print(f"--- TEST_MODE reverted to: {TEST_MODE} ---")

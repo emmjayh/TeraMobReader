@@ -28,7 +28,7 @@ def parse_compensation_data(xml_file_path):
 
             npc_name_dict = {'original': original_npc_name, 'en': original_npc_name}
             if is_korean(original_npc_name):
-                npc_name_dict['en'] = translate_to_english(original_npc_name)
+                npc_name_dict['en'] = translate_to_english(original_npc_name, text_type="NPC name")
 
             items = []
             # Find ItemBag elements directly under Compensation
@@ -39,22 +39,22 @@ def parse_compensation_data(xml_file_path):
 
                     item_name_dict = {'original': original_item_name, 'en': original_item_name}
                     if is_korean(original_item_name):
-                        item_name_dict['en'] = translate_to_english(original_item_name)
+                        item_name_dict['en'] = translate_to_english(original_item_name, text_type="item name")
 
                     items.append({'name': item_name_dict, 'templateId': item_template_id})
 
             # Find ItemBag elements under ClassItemBag
             for class_item_bag_elem in compensation_elem.findall('ClassItemBag'):
                 for item_bag_elem in class_item_bag_elem.findall('ItemBag'):
-                    for item_elem in item_bag_elem.findall('Item'):
+                    for item_elem in item_bag_elem.findall('Item'): # This loop was iterating one level too deep previously for item_name_dict
                         original_item_name = item_elem.get('name')
                         item_template_id = item_elem.get('templateId')
 
-                    item_name_dict = {'original': original_item_name, 'en': original_item_name}
-                    if is_korean(original_item_name):
-                        item_name_dict['en'] = translate_to_english(original_item_name)
+                        item_name_dict = {'original': original_item_name, 'en': original_item_name}
+                        if is_korean(original_item_name):
+                            item_name_dict['en'] = translate_to_english(original_item_name, text_type="item name")
 
-                    items.append({'name': item_name_dict, 'templateId': item_template_id})
+                        items.append({'name': item_name_dict, 'templateId': item_template_id})
 
             npcs_data.append({
                 'npcName': npc_name_dict,

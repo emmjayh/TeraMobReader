@@ -47,7 +47,7 @@ class SearchEngine:
         # Translate the input query to Korean. If it's already Korean, it should remain similar.
         korean_for_search = ""
         if english_query and isinstance(english_query, str) and english_query.strip():
-             korean_for_search = translate_to_korean(english_query) # translate_to_korean on Korean input is okay
+             korean_for_search = translate_to_korean(english_query, text_type="search query")
 
         # print(f"DEBUG: Query '{english_query}' translated for Korean search part as: '{korean_for_search}'")
 
