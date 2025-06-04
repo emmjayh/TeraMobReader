@@ -82,6 +82,68 @@ class SearchEngine:
         results = [self.all_npc_data[npc_id] for npc_id in matching_npc_ids]
         return results
 
+    def index_single_file(self, xml_file_path: str):
+        """
+        Reloads data from a single XML file and rebuilds the search index.
+        """
+        if not os.path.isabs(xml_file_path): # Ensure path is absolute or correctly resolved
+            base_dir = os.path.dirname(__file__) # src directory
+            # Assuming xml_file_path might be relative to project root or src.
+            # For simplicity, let's assume it's already a full path or correctly relative to where SearchEngine expects it.
+            # If it's just a filename, it should be in the SearchEngine's base xml_directory.
+            # This path logic might need to be more robust depending on how xml_file_path is provided.
+            # For now, let's assume xml_file_path is the full, correct path.
+
+        print(f"Re-indexing file: {xml_file_path}")
+
+        # 1. Remove old entries from this file
+        initial_count = len(self.all_npc_data)
+        self.all_npc_data = [npc_entry for npc_entry in self.all_npc_data
+                             if npc_entry.get('source_file') != xml_file_path]
+        removed_count = initial_count - len(self.all_npc_data)
+        if removed_count > 0:
+            print(f"Removed {removed_count} old entries from '{os.path.basename(xml_file_path)}'.")
+        else:
+            print(f"No existing entries found for '{os.path.basename(xml_file_path)}' to remove (this is okay if it's a new file or was not loaded).")
+
+        # 2. Parse the updated file and add its data
+        # We need parse_compensation_data from xml_parser
+        # Ensure it's imported: from xml_parser import parse_compensation_data
+        # (Assuming it's already imported at the module level of search_engine.py)
+
+        # To avoid error if SearchEngine did not import it at top level:
+        try:
+            from xml_parser import parse_compensation_data as pc_data # Local import for safety
+        except ImportError:
+            print("Error: Could not import parse_compensation_data. Re-indexing aborted.")
+            # Potentially re-add the removed items if aborting, or handle more gracefully
+            # For now, this is a critical error.
+            return
+
+        updated_npc_data_from_file = pc_data(xml_file_path)
+
+        if updated_npc_data_from_file is not None: # parse_compensation_data returns None on error
+            self.all_npc_data.extend(updated_npc_data_from_file)
+            print(f"Added/updated {len(updated_npc_data_from_file)} entries from '{os.path.basename(xml_file_path)}'.")
+        else:
+            print(f"Warning: Could not parse '{os.path.basename(xml_file_path)}' during re-indexing. File might be corrupted or empty.")
+            # Depending on desired behavior, one might re-add the 'removed_count' items
+            # or leave them out if the file is truly problematic.
+
+        # 3. Rebuild the entire index
+        # Ensure build_inverted_index is imported: from indexer import build_inverted_index
+        # (Assuming it's already imported at the module level of search_engine.py)
+        try:
+            from indexer import build_inverted_index as bi_index # Local import for safety
+        except ImportError:
+            print("Error: Could not import build_inverted_index. Index not rebuilt.")
+            return
+
+        print("Rebuilding search index...")
+        self.inverted_index_en = bi_index(self.all_npc_data)
+        print(f"Search index rebuilt. Total NPCs indexed: {len(self.all_npc_data)}")
+
+
 if __name__ == "__main__":
     print("Search Engine Script Started.") # Early print for diagnostics
     xml_dir = "../data/xmls/"  # Relative to the 'src' directory where this script is
