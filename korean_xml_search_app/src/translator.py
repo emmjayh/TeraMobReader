@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module='langdetect')
 
 # --- Test Mode Flag ---
-TEST_MODE = True # Set to False for live translations
+TEST_MODE = False # Set to False for live translations
 # --- End Test Mode Flag ---
 
 # --- Translation Cache ---
