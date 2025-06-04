@@ -34,21 +34,21 @@ class SearchApp:
         self.search_button = ttk.Button(search_frame, text="Search", command=self.perform_search)
         self.search_button.pack(side=tk.LEFT, padx=(5, 0))
 
-        # NPC Selection Dropdown (initially hidden) - Placed within search_frame for simpler layout management here
-        self.npc_selection_label = ttk.Label(search_frame, text="Select NPC:")
+        # Store search_frame for easier access to update_idletasks
+        self.search_frame = search_frame
+
+        # NPC Selection Dropdown (initially hidden)
+        self.npc_selection_label = ttk.Label(self.search_frame, text="Select NPC:")
+        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5)) # Pack it
+
         self.npc_select_var = tk.StringVar()
-        self.npc_combobox = ttk.Combobox(search_frame, textvariable=self.npc_select_var, state='readonly', width=47) # Adjusted width
+        self.npc_combobox = ttk.Combobox(self.search_frame, textvariable=self.npc_select_var, state='readonly', width=30) # Adjusted width
+        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True) # Pack it
         self.npc_combobox.bind('<<ComboboxSelected>>', self.display_selected_npc_details)
 
-        # Initial hiding - will be managed by pack/pack_forget in perform_search
-        # No need to pack them here if we pack_forget immediately after (or just don't pack yet)
-        # For simplicity in this step, we'll add them to search_frame and then forget.
-        # A more complex layout might use a dedicated frame for these that's managed.
-        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5)) # Add some padding to separate from search button
-        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        # Then hide them
         self.npc_selection_label.pack_forget()
         self.npc_combobox.pack_forget()
-
 
         # Results Display
         self.results_text = scrolledtext.ScrolledText(root, width=100, height=30, wrap=tk.WORD, state=tk.DISABLED)
@@ -144,21 +144,42 @@ class SearchApp:
             results = self.current_search_results # Use local variable for clarity
 
             if len(results) > 1:
-                self.results_text.insert(tk.END, f"{len(results)} NPCs found. Please select one from the dropdown.\n\n")
+                # 1. Make the widgets part of the layout first.
+                self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5))
+                self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+                # 2. Force Tkinter to process pending layout changes
+                self.search_frame.update_idletasks()
+
+                # 3. Now configure them
                 npc_display_names = []
-                for npc_data in results:
+                for npc_data in self.current_search_results: # Use self.current_search_results
                     display_name = f"{npc_data['npcName']['en']} (ID: {npc_data['npcTemplateId']})"
                     npc_display_names.append(display_name)
 
                 self.npc_combobox['values'] = npc_display_names
-                self.npc_combobox.set('')
 
-                # Ensure visibility using pack (assuming they were forgotten or not initially packed here)
-                self.npc_selection_label.pack(side=tk.LEFT, padx=(10,5), before=self.npc_combobox) # Pack label before combobox
-                self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
+                if npc_display_names:
+                    self.npc_combobox.current(0)
+                    # Display details of the first (default) selection.
+                    # _display_npc_details_in_text_widget will clear the results_text first.
+                    self._display_npc_details_in_text_widget(self.current_search_results[0])
 
-                self.npc_combobox.current(0) # Select first item
-                self.display_selected_npc_details() # Display its details
+                    # Prepend the count message
+                    current_content = self.results_text.get("1.0", tk.END)
+                    self.results_text.config(state=tk.NORMAL) # Enable to modify
+                    self.results_text.delete("1.0", tk.END)
+                    self.results_text.insert("1.0", f"{len(self.current_search_results)} NPCs found. Showing details for the first. Use dropdown to select others.\n\n")
+                    self.results_text.insert(tk.END, current_content)
+                    self.results_text.config(state=tk.DISABLED) # Disable again
+                else:
+                    self.npc_combobox.set('')
+                    # Clear details area if for some reason npc_display_names is empty
+                    self.results_text.config(state=tk.NORMAL)
+                    self.results_text.delete('1.0', tk.END)
+                    self.results_text.insert(tk.END, "Multiple results found, but could not populate selection.\n") # Should not happen
+                    self.results_text.config(state=tk.DISABLED)
+
                 self.status_var.set(f"Multiple results: {len(results)}. Select an NPC.")
 
             elif len(results) == 1:
