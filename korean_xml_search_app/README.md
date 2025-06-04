@@ -88,6 +88,35 @@ korean_xml_search_app/
     ```
     *Note: If you encounter Tkinter import errors on Linux, ensure `python3-tk` is installed (see dependencies).*
 
+## Launcher Scripts
+
+For convenience, launcher scripts are provided in the project root directory (`korean_xml_search_app/`) to automate the process of activating the virtual environment and running the GUI.
+
+**Prerequisites:**
+*   Ensure you have already set up the Python virtual environment (`venv`) and installed all dependencies as described in the "Setup and Installation" section.
+
+### Windows (`launcher.bat`)
+
+1.  Navigate to the project root directory (`korean_xml_search_app/`) in your File Explorer or Command Prompt.
+2.  Double-click `launcher.bat` or run it from your Command Prompt:
+    ```bash
+    .\launcher.bat
+    ```
+The script will attempt to activate the `venv`, change to the `src` directory, and start `gui.py`.
+
+### Linux / macOS (`launcher.sh`)
+
+1.  Navigate to the project root directory (`korean_xml_search_app/`) in your terminal.
+2.  **Make the script executable (only needs to be done once):**
+    ```bash
+    chmod +x launcher.sh
+    ```
+3.  Run the script:
+    ```bash
+    ./launcher.sh
+    ```
+The script will attempt to activate the `venv`, change to the `src` directory, and start `gui.py` using `python3`.
+
 ## Running Unit Tests
 
 To run the unit tests, navigate to the project root directory (`korean_xml_search_app/`) and run:
