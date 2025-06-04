@@ -45,14 +45,16 @@ class SearchApp:
         self.search_button = ttk.Button(self.search_frame, text="Search", command=self.perform_search)
         self.search_button.pack(side=tk.LEFT, padx=(5, 0))
 
+        # NPC Selection widgets - pack them in order, then hide
         self.npc_selection_label = ttk.Label(self.search_frame, text="Select NPC:")
-        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5))
+        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2)) # Packed
 
         self.npc_select_var = tk.StringVar()
-        self.npc_combobox = ttk.Combobox(self.search_frame, textvariable=self.npc_select_var, state='readonly', width=30)
-        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        self.npc_combobox = ttk.Combobox(self.search_frame, textvariable=self.npc_select_var, state='readonly', width=40)
+        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True) # Packed
         self.npc_combobox.bind('<<ComboboxSelected>>', self.handle_npc_selection_change)
 
+        # Initially hide them
         self.npc_selection_label.pack_forget()
         self.npc_combobox.pack_forget()
 
@@ -172,17 +174,20 @@ class SearchApp:
         self.current_treeview_item_to_idx_map.clear()
         self.current_npc_template_id = None
         self.current_npc_source_file = None
+        self.current_npc_display_name_for_status = None # Store name for status updates
         self.save_button.config(state=tk.DISABLED)
-        if self.active_edit_entry: # Destroy any active cell editor
+        if self.active_edit_entry:
             self.active_edit_entry.destroy()
             self.active_edit_entry = None
 
 
     def _load_npc_data_into_gui(self, npc_data):
-        self._clear_npc_data_display() # Start fresh
+        self._clear_npc_data_display()
 
         self.current_npc_template_id = npc_data.get('npcTemplateId')
         self.current_npc_source_file = npc_data.get('source_file')
+        self.current_npc_display_name_for_status = npc_data.get('npcName', {}).get('en', 'N/A')
+
         raw_items = npc_data.get('items', [])
         for item_data in raw_items:
             self.current_npc_items.append(dict(item_data))
@@ -191,21 +196,24 @@ class SearchApp:
             values = []
             for col_id, col_info in self.columns_config.items():
                 data_key = col_info["data_key"]
-                if "." in data_key: # Handle nested keys like 'name.en'
+                if "." in data_key:
                     key1, key2 = data_key.split(".")
                     value = item_dict.get(key1, {}).get(key2, 'N/A')
                 else:
                     value = item_dict.get(data_key, 'N/A')
 
                 if col_info["type"] == float and isinstance(value, (float, int)):
-                    value = f"{value:.4f}" # Format float
+                    value = f"{value:.4f}"
                 values.append(value)
 
             tree_item_id = self.items_treeview.insert("", tk.END, values=tuple(values))
             self.current_treeview_item_to_idx_map[tree_item_id] = idx
 
-        npc_name_display = npc_data.get('npcName', {}).get('en', 'N/A')
-        self.status_var.set(f"Displaying NPC: {npc_name_display} (ID: {self.current_npc_template_id}) from {os.path.basename(self.current_npc_source_file or 'N/A')}")
+        status_msg = f"Displaying: {self.current_npc_display_name_for_status} (ID: {self.current_npc_template_id})"
+        if self.current_npc_source_file:
+            status_msg += f" from {os.path.basename(self.current_npc_source_file)}"
+        self.status_var.set(status_msg)
+
         if self.current_npc_source_file and self.current_npc_template_id:
              self.save_button.config(state=tk.NORMAL)
 
