@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import os
+import traceback # Added for detailed error logging
 from search_engine import SearchEngine
 import xml_parser # For saving changes
 
@@ -107,28 +108,49 @@ class SearchApp:
         results = self.current_search_results
 
         if len(results) > 1:
-            self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5), before=self.npc_combobox)
-            self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True, before=self.search_button)
-            self.search_frame.update_idletasks()
-            npc_display_names = [f"{r['npcName']['en']} (ID: {r['npcTemplateId']})" for r in results]
-            self.npc_combobox['values'] = npc_display_names
-            if npc_display_names:
-                self.npc_combobox.current(0)
-                self.handle_npc_selection_change()
-            else:
-                self.npc_combobox.set('')
-            self.status_var.set(f"Multiple results: {len(results)}. Select an NPC or see details for the first.")
+            try:
+                self.status_var.set(f"{len(results)} NPCs found. Select one or see details for default.") # Updated message
+
+                self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5), before=self.npc_combobox)
+                self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True, before=self.search_button)
+                self.search_frame.update_idletasks()
+
+                npc_display_names = [f"{r['npcName']['en']} (ID: {r['npcTemplateId']})" for r in self.current_search_results]
+                self.npc_combobox['values'] = npc_display_names
+
+                if npc_display_names:
+                    self.npc_combobox.current(0)
+                    self.handle_npc_selection_change() # This loads the default selection
+                else: # Should ideally not happen if len(results) > 1
+                    self.npc_combobox.set('')
+                    self._clear_npc_data_display()
+                # Status var already set above
+            except Exception as e:
+                self.status_var.set("Error processing multiple NPC results. Check console.")
+                print("Error occurred in multi-result processing block of perform_search:")
+                print(f"Exception Type: {type(e).__name__}")
+                print(f"Exception Args: {e.args}")
+                print("Traceback:")
+                traceback.print_exc()
+
+                # Cleanup UI elements related to multi-select
+                self.npc_selection_label.pack_forget()
+                self.npc_combobox.pack_forget()
+                self.npc_select_var.set('')
+                self._clear_npc_data_display() # Clear treeview and related state
+
         elif len(results) == 1:
             self.npc_selection_label.pack_forget()
             self.npc_combobox.pack_forget()
             self.npc_select_var.set('')
             self._load_npc_data_into_gui(results[0])
-            self.status_var.set(f"Search complete. Found 1 NPC.")
-        else:
+            # Status var is set by _load_npc_data_into_gui
+        else: # No results
             self.npc_selection_label.pack_forget()
             self.npc_combobox.pack_forget()
             self.npc_select_var.set('')
             self.status_var.set("No results found.")
+            self._clear_npc_data_display() # Ensure treeview is also cleared
 
     def handle_npc_selection_change(self, event=None):
         selected_display_name = self.npc_select_var.get()
