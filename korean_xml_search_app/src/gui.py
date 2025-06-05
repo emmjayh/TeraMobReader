@@ -44,18 +44,18 @@ class SearchApp:
         self.query_entry.bind("<Return>", self.perform_search_event)
 
         self.search_button = ttk.Button(self.search_frame, text="Search", command=self.perform_search)
-        self.search_button.pack(side=tk.LEFT, padx=(5, 0))
+        self.search_button.pack(side=tk.LEFT, padx=(5, 0)) # Search button packed first on the left
 
-        # NPC Selection widgets - pack them in order, then hide
+        # NPC Selection widgets - pack them sequentially after the search button
         self.npc_selection_label = ttk.Label(self.search_frame, text="Select NPC:")
-        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2)) # Packed
+        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2)) # Label packed next
 
         self.npc_select_var = tk.StringVar()
         self.npc_combobox = ttk.Combobox(self.search_frame, textvariable=self.npc_select_var, state='readonly', width=40)
-        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True) # Packed
+        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True) # Combobox packed after label, fills remaining space
         self.npc_combobox.bind('<<ComboboxSelected>>', self.handle_npc_selection_change)
 
-        # Initially hide them
+        # Initially hide them using pack_forget()
         self.npc_selection_label.pack_forget()
         self.npc_combobox.pack_forget()
 
@@ -112,12 +112,15 @@ class SearchApp:
 
         if len(results) > 1:
             try:
-                self.status_var.set(f"{len(results)} NPCs found. Select one or see details for default.") # Updated message
+                # 1. Make the widgets visible by re-packing them in their defined order.
+                #    No 'before' needed as their sequence is fixed relative to each other.
+                self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2))
+                self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
 
-                self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 5), before=self.npc_combobox)
-                self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True, before=self.search_button)
+                # 2. Force Tkinter to process pending layout changes
                 self.search_frame.update_idletasks()
 
+                # 3. Now configure them.
                 npc_display_names = [f"{r['npcName']['en']} (ID: {r['npcTemplateId']})" for r in self.current_search_results]
                 self.npc_combobox['values'] = npc_display_names
 
