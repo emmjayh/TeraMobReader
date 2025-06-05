@@ -1,3 +1,4 @@
+# Version: 20240524.120000
 import tkinter as tk
 from tkinter import ttk, messagebox
 import os
@@ -281,7 +282,7 @@ class SearchApp:
                     if validated_value < min_val: raise ValueError("Max quantity cannot be less than min quantity.")
             elif expected_type == float:
                 validated_value = float(new_value_str)
-                if 0.0 > validated_value > 1.0: # Probabilities
+                if not (0.0 <= validated_value <= 1.0): # Corrected probability check
                      raise ValueError("Probability must be between 0.0 and 1.0.")
             else: # str, not validated further here
                 validated_value = new_value_str
@@ -348,7 +349,7 @@ class SearchApp:
             self.status_var.set(f"Exception during save: {e}")
             messagebox.showerror("Save Error", f"An unexpected error occurred: {e}")
             print(f"Exception during save_changes_to_xml: {e}")
-            import traceback
+            import traceback # Ensure traceback is imported here if not at top level
             traceback.print_exc()
 
 
@@ -369,5 +370,5 @@ if __name__ == "__main__":
              print("SearchEngine did not initialize successfully in headless fallback.")
     except Exception as e:
         print(f"An unexpected error occurred while trying to start the GUI: {e}")
-        import traceback
+        import traceback # Ensure traceback is imported here if not at top level
         traceback.print_exc()
