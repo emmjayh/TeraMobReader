@@ -1,8 +1,8 @@
-# Version: 20240524.120000
+# Version: 20240524.140000
 import tkinter as tk
 from tkinter import ttk, messagebox
 import os
-import traceback # Added for detailed error logging
+import traceback # For detailed error logging
 from search_engine import SearchEngine
 import xml_parser # For saving changes
 
@@ -10,23 +10,25 @@ class SearchApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Korean XML Search - Editor Mode")
-        self.root.geometry("900x700") # Adjusted size
+        self.root.geometry("950x750") # Adjusted size for more columns
 
         current_script_dir = os.path.dirname(__file__)
         xml_dir = os.path.normpath(os.path.join(current_script_dir, '..', 'data', 'xmls'))
 
         self.search_engine = SearchEngine(xml_directory=xml_dir)
 
+        # Internal state
         self.current_npc_items = []
-        self.current_treeview_item_to_idx_map = {} # Maps treeview item's iid to index in self.current_npc_items
+        self.current_treeview_item_to_idx_map = {}
         self.current_npc_template_id = None
         self.current_npc_source_file = None
+        self.current_npc_display_name_for_status = None # For status bar
         self.current_search_results = []
-        self.active_edit_entry = None # To keep track of the active cell editor
+        self.active_edit_entry = None
 
         # --- Main UI Frames ---
         top_frame = ttk.Frame(root, padding="5")
-        top_frame.pack(fill=tk.X, side=tk.TOP)
+        top_frame.pack(fill=tk.X, side=tk.TOP, pady=(0,5))
 
         self.search_frame = ttk.Frame(top_frame, padding="5")
         self.search_frame.pack(fill=tk.X)
@@ -35,40 +37,37 @@ class SearchApp:
         middle_frame.pack(expand=True, fill=tk.BOTH)
 
         bottom_frame = ttk.Frame(root, padding="5")
-        bottom_frame.pack(fill=tk.X, side=tk.BOTTOM)
+        bottom_frame.pack(fill=tk.X, side=tk.BOTTOM, pady=(5,0))
 
         # --- Search Controls ---
         ttk.Label(self.search_frame, text="English Query:").pack(side=tk.LEFT, padx=(0, 5))
-        self.query_entry = ttk.Entry(self.search_frame, width=35) # Adjusted width
-        self.query_entry.pack(side=tk.LEFT, expand=True, fill=tk.X, padx=5)
+        self.query_entry = ttk.Entry(self.search_frame, width=30)
+        self.query_entry.pack(side=tk.LEFT, fill=tk.X, expand=False, padx=5) # Don't expand entry too much
         self.query_entry.bind("<Return>", self.perform_search_event)
 
         self.search_button = ttk.Button(self.search_frame, text="Search", command=self.perform_search)
-        self.search_button.pack(side=tk.LEFT, padx=(5, 0)) # Search button packed first on the left
+        self.search_button.pack(side=tk.LEFT, padx=(5, 10))
 
-        # NPC Selection widgets - pack them sequentially after the search button
         self.npc_selection_label = ttk.Label(self.search_frame, text="Select NPC:")
-        self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2)) # Label packed next
+        self.npc_selection_label.pack(side=tk.LEFT, padx=(0, 2))
 
         self.npc_select_var = tk.StringVar()
         self.npc_combobox = ttk.Combobox(self.search_frame, textvariable=self.npc_select_var, state='readonly', width=40)
-        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True) # Combobox packed after label, fills remaining space
+        self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
         self.npc_combobox.bind('<<ComboboxSelected>>', self.handle_npc_selection_change)
 
-        # Initially hide them using pack_forget()
         self.npc_selection_label.pack_forget()
         self.npc_combobox.pack_forget()
 
         # --- Treeview for Items ---
-        # Column identifiers (used internally by Treeview) and their display names
         self.columns_config = {
-            "item_id": {"heading": "Item ID", "width": 70, "data_key": "templateId", "type": str},
-            "en_name": {"heading": "English Name", "width": 180, "data_key": "name.en", "type": str}, # Special handling for nested dict
-            "ko_name": {"heading": "Original Name", "width": 180, "data_key": "name.original", "type": str}, # Special handling
-            "itembag_prob": {"heading": "Bag Prob.", "width": 80, "data_key": "itembag_probability", "type": float},
-            "item_prob": {"heading": "Item Prob.", "width": 80, "data_key": "item_probability", "type": float},
-            "min_qty": {"heading": "Min", "width": 50, "data_key": "min_quantity", "type": int},
-            "max_qty": {"heading": "Max", "width": 50, "data_key": "max_quantity", "type": int}
+            "item_id": {"heading": "Item ID", "width": 80, "data_key": "templateId", "type": str, "editable": False},
+            "en_name": {"heading": "English Name", "width": 200, "data_key": "name.en", "type": str, "editable": False},
+            "ko_name": {"heading": "Original Name", "width": 200, "data_key": "name.original", "type": str, "editable": False},
+            "itembag_prob": {"heading": "Bag Prob.", "width": 80, "data_key": "itembag_probability", "type": float, "editable": True},
+            "item_prob": {"heading": "Item Prob.", "width": 80, "data_key": "item_probability", "type": float, "editable": True},
+            "min_qty": {"heading": "Min", "width": 60, "data_key": "min_quantity", "type": int, "editable": True},
+            "max_qty": {"heading": "Max", "width": 60, "data_key": "max_quantity", "type": int, "editable": True}
         }
         column_ids = list(self.columns_config.keys())
 
@@ -78,9 +77,14 @@ class SearchApp:
             self.items_treeview.heading(col_id, text=col_info["heading"])
             self.items_treeview.column(col_id, width=col_info["width"], anchor=tk.W if col_info["type"] == str else tk.CENTER)
 
-        tree_scrollbar = ttk.Scrollbar(middle_frame, orient="vertical", command=self.items_treeview.yview)
-        self.items_treeview.configure(yscrollcommand=tree_scrollbar.set)
-        tree_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        tree_scrollbar_y = ttk.Scrollbar(middle_frame, orient="vertical", command=self.items_treeview.yview)
+        self.items_treeview.configure(yscrollcommand=tree_scrollbar_y.set)
+        tree_scrollbar_y.pack(side=tk.RIGHT, fill=tk.Y)
+
+        tree_scrollbar_x = ttk.Scrollbar(middle_frame, orient="horizontal", command=self.items_treeview.xview)
+        self.items_treeview.configure(xscrollcommand=tree_scrollbar_x.set)
+        tree_scrollbar_x.pack(side=tk.BOTTOM, fill=tk.X)
+
         self.items_treeview.pack(expand=True, fill=tk.BOTH)
         self.items_treeview.bind("<Double-1>", self.on_treeview_double_click)
 
@@ -94,7 +98,6 @@ class SearchApp:
         self.status_bar.pack(side=tk.BOTTOM, fill=tk.X)
         self.status_var.set("Ready. Translator TEST_MODE is ON.")
 
-
     def perform_search_event(self, event=None):
         self.perform_search()
 
@@ -105,58 +108,48 @@ class SearchApp:
             return
         self.status_var.set(f"Searching for '{query}'...")
 
-        self._clear_npc_data_display() # Clear Treeview and current NPC state
+        self._clear_npc_data_display()
 
         self.current_search_results = self.search_engine.search(query)
         results = self.current_search_results
 
         if len(results) > 1:
             try:
-                # 1. Make the widgets visible by re-packing them in their defined order.
-                #    No 'before' needed as their sequence is fixed relative to each other.
                 self.npc_selection_label.pack(side=tk.LEFT, padx=(10, 2))
                 self.npc_combobox.pack(side=tk.LEFT, fill=tk.X, expand=True)
-
-                # 2. Force Tkinter to process pending layout changes
                 self.search_frame.update_idletasks()
 
-                # 3. Now configure them.
                 npc_display_names = [f"{r['npcName']['en']} (ID: {r['npcTemplateId']})" for r in self.current_search_results]
                 self.npc_combobox['values'] = npc_display_names
 
                 if npc_display_names:
                     self.npc_combobox.current(0)
-                    self.handle_npc_selection_change() # This loads the default selection
-                else: # Should ideally not happen if len(results) > 1
+                    self.handle_npc_selection_change() # Loads first NPC, also updates status bar
+                    # Update status bar for multi-result context *after* first NPC is loaded
+                    self.status_var.set(f"{len(self.current_search_results)} NPCs found. Showing: '{self.current_npc_display_name_for_status}'. Use dropdown for others.")
+                else:
                     self.npc_combobox.set('')
                     self._clear_npc_data_display()
-                # Status var already set above
+                    self.status_var.set("Multiple results found, but an issue occurred populating dropdown.")
             except Exception as e:
                 self.status_var.set("Error processing multiple NPC results. Check console.")
                 print("Error occurred in multi-result processing block of perform_search:")
-                print(f"Exception Type: {type(e).__name__}")
-                print(f"Exception Args: {e.args}")
-                print("Traceback:")
                 traceback.print_exc()
-
-                # Cleanup UI elements related to multi-select
                 self.npc_selection_label.pack_forget()
                 self.npc_combobox.pack_forget()
                 self.npc_select_var.set('')
-                self._clear_npc_data_display() # Clear treeview and related state
-
+                self._clear_npc_data_display()
         elif len(results) == 1:
             self.npc_selection_label.pack_forget()
             self.npc_combobox.pack_forget()
             self.npc_select_var.set('')
             self._load_npc_data_into_gui(results[0])
-            # Status var is set by _load_npc_data_into_gui
-        else: # No results
+        else:
             self.npc_selection_label.pack_forget()
             self.npc_combobox.pack_forget()
             self.npc_select_var.set('')
             self.status_var.set("No results found.")
-            self._clear_npc_data_display() # Ensure treeview is also cleared
+            self._clear_npc_data_display()
 
     def handle_npc_selection_change(self, event=None):
         selected_display_name = self.npc_select_var.get()
@@ -172,21 +165,25 @@ class SearchApp:
             self._load_npc_data_into_gui(selected_npc_data)
 
     def _clear_npc_data_display(self):
+        if self.active_edit_entry:
+            self.active_edit_entry.destroy()
+            self.active_edit_entry = None
         for i in self.items_treeview.get_children():
             self.items_treeview.delete(i)
         self.current_npc_items.clear()
         self.current_treeview_item_to_idx_map.clear()
         self.current_npc_template_id = None
         self.current_npc_source_file = None
-        self.current_npc_display_name_for_status = None # Store name for status updates
+        self.current_npc_display_name_for_status = None
         self.save_button.config(state=tk.DISABLED)
-        if self.active_edit_entry:
-            self.active_edit_entry.destroy()
-            self.active_edit_entry = None
-
+        # Do not clear results_text here as perform_search uses it for count message
 
     def _load_npc_data_into_gui(self, npc_data):
-        self._clear_npc_data_display()
+        # Clear previous NPC's items and state, but not the general results_text area
+        if self.active_edit_entry: self.active_edit_entry.destroy(); self.active_edit_entry = None
+        for i in self.items_treeview.get_children(): self.items_treeview.delete(i)
+        self.current_npc_items.clear()
+        self.current_treeview_item_to_idx_map.clear()
 
         self.current_npc_template_id = npc_data.get('npcTemplateId')
         self.current_npc_source_file = npc_data.get('source_file')
@@ -198,17 +195,21 @@ class SearchApp:
 
         for idx, item_dict in enumerate(self.current_npc_items):
             values = []
-            for col_id, col_info in self.columns_config.items():
+            for col_id_key in self.columns_config: # Iterate in defined order
+                col_info = self.columns_config[col_id_key]
                 data_key = col_info["data_key"]
+                val = None
                 if "." in data_key:
                     key1, key2 = data_key.split(".")
-                    value = item_dict.get(key1, {}).get(key2, 'N/A')
+                    val = item_dict.get(key1, {}).get(key2, '') # Default to empty string for display
                 else:
-                    value = item_dict.get(data_key, 'N/A')
+                    val = item_dict.get(data_key, '')
 
-                if col_info["type"] == float and isinstance(value, (float, int)):
-                    value = f"{value:.4f}"
-                values.append(value)
+                if col_info["type"] == float and isinstance(val, (float, int)):
+                    val = f"{val:.4f}"
+                elif val is None: # Ensure no None values are passed to Treeview
+                    val = ''
+                values.append(val)
 
             tree_item_id = self.items_treeview.insert("", tk.END, values=tuple(values))
             self.current_treeview_item_to_idx_map[tree_item_id] = idx
@@ -220,55 +221,53 @@ class SearchApp:
 
         if self.current_npc_source_file and self.current_npc_template_id:
              self.save_button.config(state=tk.NORMAL)
+        else:
+             self.save_button.config(state=tk.DISABLED)
+
 
     def on_treeview_double_click(self, event):
-        if self.active_edit_entry: # Prevent multiple editors
-            self.active_edit_entry.destroy()
-            self.active_edit_entry = None
+        if self.active_edit_entry: self.active_edit_entry.destroy(); self.active_edit_entry = None
 
         tree_item_id = self.items_treeview.focus()
         if not tree_item_id: return
 
-        column_id_str = self.items_treeview.identify_column(event.x) # e.g., "#1", "#2"
+        column_id_str = self.items_treeview.identify_column(event.x)
 
-        # Find column config by matching internal ID (e.g. '#3') to our defined column_ids order
         col_idx = int(column_id_str.replace('#','')) -1
         if 0 <= col_idx < len(self.columns_config):
-            col_key_name = list(self.columns_config.keys())[col_idx] # e.g., "itembag_prob"
+            col_key_name = list(self.columns_config.keys())[col_idx]
             col_info = self.columns_config[col_key_name]
 
-            # Only allow editing for specified editable columns
-            if col_key_name not in ["itembag_prob", "item_prob", "min_qty", "max_qty"]: # Example editable keys
+            if not col_info.get("editable", False):
                  self.status_var.set(f"Column '{col_info['heading']}' is not editable.")
                  return
         else:
-            return # Clicked outside valid columns
+            return
 
         x, y, width, height = self.items_treeview.bbox(tree_item_id, column_id_str)
-
         current_value = self.items_treeview.set(tree_item_id, column=column_id_str)
 
-        self.active_edit_entry = ttk.Entry(self.items_treeview, width=width) # Use treeview as parent
+        self.active_edit_entry = ttk.Entry(self.items_treeview)
         self.active_edit_entry.place(x=x, y=y, width=width, height=height)
         self.active_edit_entry.insert(0, current_value)
         self.active_edit_entry.focus_set()
-        self.active_edit_entry.bind("<Return>", lambda e, ti=tree_item_id, ck=col_key_name, ed=self.active_edit_entry: self.save_cell_edit(e, ti, ck, ed))
-        self.active_edit_entry.bind("<FocusOut>", lambda e, ti=tree_item_id, ck=col_key_name, ed=self.active_edit_entry: self.save_cell_edit(e, ti, ck, ed))
-        self.active_edit_entry.bind("<Escape>", lambda e, ed=self.active_edit_entry: ed.destroy())
+        self.active_edit_entry.bind("<Return>", lambda ev: self.save_cell_edit(ev, tree_item_id, col_key_name, self.active_edit_entry))
+        self.active_edit_entry.bind("<FocusOut>", lambda ev: self.save_cell_edit(ev, tree_item_id, col_key_name, self.active_edit_entry))
+        self.active_edit_entry.bind("<Escape>", lambda ev, ed=self.active_edit_entry: ed.destroy())
 
 
     def save_cell_edit(self, event, tree_item_id, column_key_name, entry_widget):
-        if entry_widget != self.active_edit_entry: # Stale event
-            entry_widget.destroy()
+        if entry_widget != self.active_edit_entry:
+            entry_widget.destroy() # Destroy if it's a stale call
             return
 
         new_value_str = entry_widget.get()
-        entry_widget.destroy()
+        entry_widget.destroy() # Destroy immediately after getting value
         self.active_edit_entry = None
 
         list_idx = self.current_treeview_item_to_idx_map.get(tree_item_id)
         if list_idx is None or list_idx >= len(self.current_npc_items):
-            self.status_var.set("Error: Item reference lost.")
+            self.status_var.set("Error: Item reference lost during edit.")
             return
 
         col_info = self.columns_config[column_key_name]
@@ -282,24 +281,29 @@ class SearchApp:
                 if validated_value < 0: raise ValueError("Quantity cannot be negative.")
                 if data_key == "max_quantity":
                     min_val = self.current_npc_items[list_idx].get("min_quantity", 0)
-                    if validated_value < min_val: raise ValueError("Max quantity cannot be less than min quantity.")
+                    if validated_value < min_val: raise ValueError("Max quantity < min.")
             elif expected_type == float:
                 validated_value = float(new_value_str)
-                if not (0.0 <= validated_value <= 1.0): # Corrected probability check
-                     raise ValueError("Probability must be between 0.0 and 1.0.")
-            else: # str, not validated further here
+                if not (0.0 <= validated_value <= 1.0):
+                     raise ValueError("Probability must be 0.0-1.0.")
+            else:
                 validated_value = new_value_str
         except ValueError as ve:
             self.status_var.set(f"Invalid value for {col_info['heading']}: {ve}")
+            messagebox.showerror("Validation Error", f"Invalid value for {col_info['heading']}:\n{ve}\nOriginal value restored.")
+            # Re-populate the cell with original value if validation fails by re-setting it from internal store
+            original_value = self.current_npc_items[list_idx].get(data_key)
+            if "." in data_key: # Handle nested for original value retrieval
+                key1, key2 = data_key.split(".")
+                original_value = self.current_npc_items[list_idx].get(key1, {}).get(key2, '')
+            display_value = f"{original_value:.4f}" if expected_type == float and isinstance(original_value, (float,int)) else str(original_value if original_value is not None else '')
+            self.items_treeview.set(tree_item_id, column=column_key_name, value=display_value)
             return
 
-        # Update Treeview (use formatted value for floats)
         display_value = f"{validated_value:.4f}" if expected_type == float else str(validated_value)
         self.items_treeview.set(tree_item_id, column=column_key_name, value=display_value)
 
-        # Update internal data store self.current_npc_items
-        # For nested 'name.en' or 'name.original', this needs special handling
-        if "." in data_key: # e.g. 'name.en'
+        if "." in data_key:
             key1, key2 = data_key.split(".")
             if key1 not in self.current_npc_items[list_idx]: self.current_npc_items[list_idx][key1] = {}
             self.current_npc_items[list_idx][key1][key2] = validated_value
@@ -317,17 +321,11 @@ class SearchApp:
 
         self.status_var.set(f"Saving changes for NPC ID {self.current_npc_template_id} to {os.path.basename(self.current_npc_source_file)}...")
         try:
-            # Prepare data for update_compensation_data: list of item dicts
-            # The item dicts in self.current_npc_items should now be in the correct format
-            # as they were augmented by xml_parser.parse_compensation_data.
-            # We need to ensure the keys match what update_compensation_data expects.
-            # update_compensation_data expects: templateId, name (original), itembag_probability, item_probability, min_quantity, max_quantity
-
             items_to_save = []
             for item_gui_data in self.current_npc_items:
                 item_to_save = {
                     'templateId': item_gui_data.get('templateId'),
-                    'name': {'original': item_gui_data.get('name',{}).get('original')}, # Ensure original name is passed
+                    'name': {'original': item_gui_data.get('name',{}).get('original')},
                     'itembag_probability': item_gui_data.get('itembag_probability'),
                     'item_probability': item_gui_data.get('item_probability'),
                     'min_quantity': item_gui_data.get('min_quantity'),
@@ -338,7 +336,7 @@ class SearchApp:
             success = xml_parser.update_compensation_data(
                 self.current_npc_source_file,
                 self.current_npc_template_id,
-                items_to_save # Pass the potentially modified self.current_npc_items
+                items_to_save
             )
 
             if success:
@@ -352,7 +350,6 @@ class SearchApp:
             self.status_var.set(f"Exception during save: {e}")
             messagebox.showerror("Save Error", f"An unexpected error occurred: {e}")
             print(f"Exception during save_changes_to_xml: {e}")
-            import traceback # Ensure traceback is imported here if not at top level
             traceback.print_exc()
 
 
@@ -373,5 +370,4 @@ if __name__ == "__main__":
              print("SearchEngine did not initialize successfully in headless fallback.")
     except Exception as e:
         print(f"An unexpected error occurred while trying to start the GUI: {e}")
-        import traceback # Ensure traceback is imported here if not at top level
         traceback.print_exc()
