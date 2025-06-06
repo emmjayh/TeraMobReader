@@ -98,7 +98,7 @@ def translate_to_english(text: str, text_type="text") -> str: # Added text_type
         translated = GoogleTranslator(source='ko', target='en').translate(stripped_text)
         if translated:
             translation_cache[cache_key] = translated
-            save_translation_cache()
+            # save_translation_cache() # Removed: Save on exit
             return translated
         return text
     except Exception as e:
@@ -134,7 +134,7 @@ def translate_to_korean(text: str, text_type="text") -> str: # Added text_type
         translated = GoogleTranslator(source='en', target='ko').translate(stripped_text)
         if translated:
             translation_cache[cache_key] = translated
-            save_translation_cache()
+            # save_translation_cache() # Removed: Save on exit
             return translated
         return text
     except Exception as e:

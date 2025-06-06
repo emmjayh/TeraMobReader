@@ -5,12 +5,14 @@ import os
 import traceback # For detailed error logging
 from search_engine import SearchEngine
 import xml_parser # For saving changes
+import translator # For saving cache on exit
 
 class SearchApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Korean XML Search - Editor Mode")
         self.root.geometry("950x750") # Adjusted size for more columns
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing) # Ensure this is set
 
         current_script_dir = os.path.dirname(__file__)
         xml_dir = os.path.normpath(os.path.join(current_script_dir, '..', 'data', 'xmls'))
@@ -124,21 +126,27 @@ class SearchApp:
 
                 if npc_display_names:
                     self.npc_combobox.current(0)
-                    self.handle_npc_selection_change() # Loads first NPC, also updates status bar
-                    # Update status bar for multi-result context *after* first NPC is loaded
+                    self.handle_npc_selection_change() # This loads the default selection
+                    # Status bar updated by handle_npc_selection_change and _load_npc_data_into_gui
+                    # Then set the multi-result specific message
                     self.status_var.set(f"{len(self.current_search_results)} NPCs found. Showing: '{self.current_npc_display_name_for_status}'. Use dropdown for others.")
-                else:
+                else: # Should ideally not happen if len(results) > 1
                     self.npc_combobox.set('')
                     self._clear_npc_data_display()
                     self.status_var.set("Multiple results found, but an issue occurred populating dropdown.")
             except Exception as e:
                 self.status_var.set("Error processing multiple NPC results. Check console.")
                 print("Error occurred in multi-result processing block of perform_search:")
+                print(f"Exception Type: {type(e).__name__}") # Added type and args
+                print(f"Exception Args: {e.args}")           # Added type and args
+                print("Traceback:")
                 traceback.print_exc()
+
+                # Cleanup UI elements related to multi-select
                 self.npc_selection_label.pack_forget()
                 self.npc_combobox.pack_forget()
                 self.npc_select_var.set('')
-                self._clear_npc_data_display()
+                self._clear_npc_data_display() # Clear treeview and related state
         elif len(results) == 1:
             self.npc_selection_label.pack_forget()
             self.npc_combobox.pack_forget()
@@ -352,6 +360,21 @@ class SearchApp:
             print(f"Exception during save_changes_to_xml: {e}")
             traceback.print_exc()
 
+    def on_closing(self):
+        """Handles the window closing event to save cache."""
+        print("GUI: Window closing. Attempting to save translation cache...")
+        try:
+            # The translator module itself might have TEST_MODE.
+            # We save regardless, as the cache might contain items if TEST_MODE was toggled.
+            # save_translation_cache will simply write the current in-memory cache.
+            translator.save_translation_cache()
+            print("GUI: Translation cache save attempt completed.")
+        except Exception as e:
+            print(f"GUI: An error occurred while saving translation cache: {e}")
+            traceback.print_exc()
+        finally:
+            print("GUI: Destroying root window.")
+            self.root.destroy()
 
 if __name__ == "__main__":
     print("GUI Script Started.")
